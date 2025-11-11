@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Phase Object
+  - Golf Ball
   layers:
   - Default
   - TransparentFX
