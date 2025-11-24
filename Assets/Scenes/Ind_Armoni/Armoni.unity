@@ -1197,6 +1197,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7084838874688653003, guid: 8f2d531ed23c3c04eb6fba38c5b0290f, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7556069369678233293, guid: 8f2d531ed23c3c04eb6fba38c5b0290f, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1244,6 +1248,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2892836467430101007, guid: 8f2d531ed23c3c04eb6fba38c5b0290f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6495877348698503649}
+    - targetCorrespondingSourceObject: {fileID: 2892836467430101007, guid: 8f2d531ed23c3c04eb6fba38c5b0290f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6495877348698503652}
   m_SourcePrefab: {fileID: 100100000, guid: 8f2d531ed23c3c04eb6fba38c5b0290f, type: 3}
 --- !u!1 &6495877348698503648 stripped
 GameObject:
@@ -1262,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd90b6395532264b8a483cc7bb0a636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPower: 5
+  shotPower: 100
   stopVelocity: 0.05
   lineRenderer: {fileID: 269089118}
   playerInput: {fileID: 6495877348698503651}
@@ -1278,6 +1285,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6495877348698503652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495877348698503648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cf502b44d604a4c9fc40ef8b6ef531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeUp: {x: 2, y: 2, z: 2}
+  sizeDown: {x: 0.25, y: 0.25, z: 0.25}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
