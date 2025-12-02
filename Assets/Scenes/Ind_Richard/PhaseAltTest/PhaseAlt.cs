@@ -9,6 +9,8 @@ public class PhaseAlt : MonoBehaviour{
     // By default, meshes dont work, you must set 'isConvex' -> True
     // By default, URP Materials dont work, you must change the material to something else, then set 'Surface Type' -> Transparent
 
+    // BUG: unphasing when inside of something has wierd physics, need to bring over the fix from Alexis's script
+
     private GameObject[] phaseObjects;
 
     void Start(){
