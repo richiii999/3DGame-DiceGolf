@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PhaseAbility : MonoBehaviour
+public class PhaseAbility : MonoBehaviour, IOpacity
 {
     private Rigidbody rb;
     public float stopThreshold;
