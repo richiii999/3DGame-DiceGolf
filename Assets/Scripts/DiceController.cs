@@ -16,6 +16,7 @@ public class DiceController : MonoBehaviour
     private Rigidbody rb;
 
     public ScoreManager ScoreHandler;
+    public DiceNumber DiceHandler;
     private int currentNumber;
     private int stroke;
     private bool wasIdle = true;
