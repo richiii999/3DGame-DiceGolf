@@ -399,7 +399,7 @@ MonoBehaviour:
   TransparentLayers:
     serializedVersion: 2
     m_Bits: 0
-  MinimumDistanceFromTarget: 1.5
+  MinimumDistanceFromTarget: 5.09
   AvoidObstacles:
     Enabled: 1
     DistanceLimit: 0
@@ -1299,6 +1299,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeUp: {x: 2, y: 2, z: 2}
   sizeDown: {x: 0.25, y: 0.25, z: 0.25}
+  MagicCircle: {fileID: 5034656251238326012, guid: 9de2fa19f0390d44491264d9cab8cec5, type: 3}
+  player: {fileID: 543450653644821469}
+  riseTime: 0.5
+  spawnOffset: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
