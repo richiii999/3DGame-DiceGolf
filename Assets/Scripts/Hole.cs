@@ -1,10 +1,8 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Hole : MonoBehaviour{
-    public Button nextHoleButton; // NextHole button (in UI prefab)
+    public GameObject nextHoleButton; // NextHole button (in UI prefab)
     public string nextHole = "MainMenu"; // What is the next hole? 
 
     void Start(){
@@ -13,10 +11,16 @@ public class Hole : MonoBehaviour{
             nextHole = "MainMenu";
         }
 
-        if (!nextHoleButton) { Debug.LogWarning("nextHoleButton not set!"); }
+        if (!nextHoleButton) { 
+            Debug.LogWarning("nextHoleButton not set, attempting search");
+            nextHoleButton = GameObject.Find("UI/UI_Canvas/NextHole"); 
+
+            if (!nextHoleButton) { Debug.LogError("nextHoleButton not found!"); }
+        }
     }
 
     public void OnTriggerEnter(Collider other){ if (other.tag == "Golf Ball") HoleComplete(); }
 
-    void HoleComplete() { if (nextHoleButton) nextHoleButton.enabled = true; }
+    void HoleComplete() { if (nextHoleButton) nextHoleButton.SetActive(true); }
+    
 }
