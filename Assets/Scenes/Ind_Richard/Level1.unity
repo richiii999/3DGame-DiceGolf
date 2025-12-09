@@ -378,6 +378,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 941829809674464640, guid: 4a2b739663a6cc44984f6fe9c128541a, type: 3}
   m_PrefabInstance: {fileID: 81480385}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &81480388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1860817836983863736, guid: 4a2b739663a6cc44984f6fe9c128541a, type: 3}
+  m_PrefabInstance: {fileID: 81480385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8e416ad18d2aa4a9a7944a25ee2a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &108429751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2104,10 +2115,18 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6588176869185912114, guid: 41f3b579dec0d8348ab84e14a034dc08, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7827262650573715162, guid: 41f3b579dec0d8348ab84e14a034dc08, type: 3}
       propertyPath: D20_Faces
       value: 
       objectReference: {fileID: 401186336}
+    - target: {fileID: 7827262650573715162, guid: 41f3b579dec0d8348ab84e14a034dc08, type: 3}
+      propertyPath: DiceHandler
+      value: 
+      objectReference: {fileID: 81480388}
     - target: {fileID: 7827262650573715162, guid: 41f3b579dec0d8348ab84e14a034dc08, type: 3}
       propertyPath: ScoreHandler
       value: 
