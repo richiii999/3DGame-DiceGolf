@@ -932,6 +932,9 @@ MonoBehaviour:
   gameObject: {fileID: 2892836467430101007}
   stopped: 0
   abilityActivated: 0
+  positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   ScoreHandler: {fileID: 0}
   DiceHandler: {fileID: 0}
 --- !u!114 &5071218246467808605
