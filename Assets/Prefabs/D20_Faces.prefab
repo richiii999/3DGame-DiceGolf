@@ -541,6 +541,8 @@ GameObject:
   - component: {fileID: 7084838874688653003}
   - component: {fileID: 6887452801212793007}
   - component: {fileID: 7800894104837541162}
+  - component: {fileID: 1233640225728021720}
+  - component: {fileID: 3072898490750490077}
   m_Layer: 0
   m_Name: D20_Faces
   m_TagString: Untagged
@@ -736,6 +738,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   D20_Faces: {fileID: 2892836467430101007}
+--- !u!114 &1233640225728021720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892836467430101007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11e4fa658569cd429c56a658a05f541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableKeys: 0
+  phaseTag: Phase Object
+--- !u!114 &3072898490750490077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892836467430101007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89d940cc3718c74194e4b0265d16781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  component: {fileID: 7084838874688653003}
+  abilityOn: 0
+  inRoute: 0
 --- !u!1 &3052104316013330558
 GameObject:
   m_ObjectHideFlags: 0
