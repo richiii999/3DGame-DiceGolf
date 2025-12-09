@@ -1,23 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonHandler : MonoBehaviour
-{
-    public string level = "MainMenu";
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(level);
-    }
+// ButtonHandler.cs, provides functions for the Main Menu buttons
 
-    public void QuitGame()
-    {
-        Debug.Log("Quit was pressed");
-        Application.Quit();
-    }
+public class ButtonHandler : MonoBehaviour{
+    public string level = "MainMenu"; // Default to Main Menu scene
 
-    public void displayMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
+    public void PlayGame(){ SceneManager.LoadScene(level); } // Loads the specified level
+    public void QuitGame(){ Application.Quit(); } // Quit
+    public void displayMenu(){ SceneManager.LoadScene("MainMenu"); } // Takes you back to the main menu
 }
