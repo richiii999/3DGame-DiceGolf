@@ -14,4 +14,10 @@ public class ButtonHandler : MonoBehaviour
         Debug.Log("Quit was pressed");
         Application.Quit();
     }
+
+    public void displayMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
