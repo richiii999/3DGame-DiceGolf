@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,6 +17,7 @@ public class DiceController : MonoBehaviour
     
 
     private InputAction aimAction, pointerAction;
+    public Vector3[] positions; // Positions is saved between shots (for use in PowerSlider)
 
     private bool isIdle;
     private bool isAiming;
@@ -64,7 +66,6 @@ public class DiceController : MonoBehaviour
 
             if (!DiceHandler) { Debug.LogError("DiceHandler not found!"); }
         }
-
     }
 
     private void OnDestroy()
@@ -182,8 +183,14 @@ public class DiceController : MonoBehaviour
     {
         // Set clamped point so the line doesn't hit the wall/floor/etc
         //Vector3 clampedPoint = new Vector3(worldPoint.x, transform.position.y, worldPoint.z);
+
         // Draw the line from ball to cursor target
-        Vector3[] positions = { transform.position, worldPoint }; // Start the ball's position and the end is the aim point
+        positions[0] = transform.position;
+        positions[1] = worldPoint; // Start the ball's position and the end is the aim point
+
+        Debug.Log(worldPoint);
+        Debug.Log(transform.position);
+
         lineRenderer.SetPositions(positions); // Update LineRenderer positions
         lineRenderer.enabled = true; // Ensure line is visible
     }
