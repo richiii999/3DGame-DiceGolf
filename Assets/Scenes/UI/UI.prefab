@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 740461755462768994}
         m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
-        m_MethodName: displayMenu
+        m_MethodName: DisplayMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

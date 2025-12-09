@@ -8,5 +8,5 @@ public class ButtonHandler : MonoBehaviour{
 
     public void PlayGame(){ SceneManager.LoadScene(level); } // Loads the specified level
     public void QuitGame(){ Application.Quit(); } // Quit
-    public void displayMenu(){ SceneManager.LoadScene("MainMenu"); } // Takes you back to the main menu
+    public void DisplayMenu(){ SceneManager.LoadScene("MainMenu"); } // Takes you back to the main menu
 }
